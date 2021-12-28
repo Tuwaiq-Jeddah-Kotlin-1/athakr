@@ -19,9 +19,6 @@
             android:id="@+id/action_homeFragment_to_calenderFragment"
             app:destination="@id/calenderFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_athkarFragment"
-            app:destination="@id/athkarFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_nameofFragment"
             app:destination="@id/nameofFragment" />
         <action
@@ -39,6 +36,9 @@
         <action
             android:id="@+id/action_homeFragment_to_omrahFragment"
             app:destination="@id/omrahFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_athkarActivity"
+            app:destination="@id/athkarActivity" />
     </fragment>
 
     <fragment
@@ -50,7 +50,7 @@
             android:id="@+id/action_sabahFragment_to_listTasbahFragment"
             app:destination="@id/listTasbahFragment" />
         <argument
-            android:defaultValue="@null"
+            android:defaultValue=""
             app:nullable="true"
             android:name="tzaker"
             app:argType="string" />
@@ -65,11 +65,6 @@
         android:name="com.example.athakar.ui.main.activity.CalenderFragment"
         android:label="fragment_calender"
         tools:layout="@layout/fragment_calender" />
-    <fragment
-        android:id="@+id/athkarFragment"
-        android:name="com.example.athakar.ui.main.activity.athkarFragment"
-        android:label="fragment_athkar"
-        tools:layout="@layout/fragment_athkar" />
     <fragment
         android:id="@+id/nameofFragment"
         android:name="com.example.athakar.ui.main.activity.nameofFragment"
@@ -118,4 +113,9 @@
         android:name="com.example.athakar.ui.main.fragment.Sabah.ui.addFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" />
+    <activity
+        android:id="@+id/athkarActivity"
+        android:name="com.example.athakar.ui.main.activity.Athkar.AthkarActivity"
+        android:label="activity_athkar"
+        tools:layout="@layout/activity_athkar" />
 </navigation>

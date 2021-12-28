@@ -42,7 +42,7 @@ class HomeFragment : Fragment() {
 
         athakarButtom=view.findViewById(R.id.athakarButtom)
         athakarButtom.setOnClickListener {
-               findNavController().navigate(R.id.action_homeFragment_to_athkarFragment) }
+               findNavController().navigate(R.id.action_homeFragment_to_athkarActivity) }
 
 
         calenderButton=view.findViewById(R.id.calenderButton)

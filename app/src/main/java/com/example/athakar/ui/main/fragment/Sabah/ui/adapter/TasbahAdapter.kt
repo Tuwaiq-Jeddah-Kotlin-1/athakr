@@ -17,13 +17,10 @@ import com.example.athakar.ui.main.fragment.Sabah.model.Tasbah
 class TasbahAdapter(private val tasbahList:ArrayList<Tasbah>) : RecyclerView.Adapter<TasbahAdapter.tasbahViewHolder>() {
 
 
-
-
     class tasbahViewHolder(view:View):RecyclerView.ViewHolder(view) {
 
-        val tasbahName:TextView = view.findViewById(R.id.title_tasbah)
+        val tasbahName:TextView = view.findViewById(R.id.title_tasbah) }
 
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): tasbahViewHolder {
 
@@ -31,7 +28,6 @@ class TasbahAdapter(private val tasbahList:ArrayList<Tasbah>) : RecyclerView.Ada
                 //هنا
             .inflate(R.layout.list_item,parent,false)
         return tasbahViewHolder(view)
-
     }
 
     override fun getItemCount(): Int = tasbahList.size
@@ -39,11 +35,13 @@ class TasbahAdapter(private val tasbahList:ArrayList<Tasbah>) : RecyclerView.Ada
 
     override fun onBindViewHolder(holder: tasbahViewHolder, position: Int) {
 
+        //// تخزين في متغير عشان اعرض الايتم
         var tt = tasbahList[position].name_Tasbha
-       holder.tasbahName.text = tt
 
+         holder.tasbahName.text = tt
+             // في حاله صارت اون كلك ليسنر علي الايتم
          holder.itemView.setOnClickListener {
-
+            // هنا نقوله يرومج من اللسته الي السبحه (المسار الي راح يمشة)
            var action = listTasbahFragmentDirections.actionListTasbahFragmentToSabahFragment(tt)
 
              it.findNavController().navigate(action)
@@ -54,8 +52,6 @@ class TasbahAdapter(private val tasbahList:ArrayList<Tasbah>) : RecyclerView.Ada
            // fun onClick() {
 
         }
-
-
 
         }
 

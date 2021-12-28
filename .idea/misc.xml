@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.20572916666666666" />
         <entry key="app/src/main/res/drawable-v24/forty_bg.xml" value="0.20677083333333332" />
         <entry key="app/src/main/res/drawable-v24/main_btn_bg.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_athkar.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23721881390593047" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.22308513608958522" />
         <entry key="app/src/main/res/layout/azkar_item.xml" value="0.190625" />
@@ -24,6 +26,7 @@
         <entry key="app/src/main/res/layout/fragment_quran.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/fragment_sabah.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/item_category.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.1" />
       </map>
