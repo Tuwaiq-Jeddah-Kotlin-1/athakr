@@ -13,10 +13,12 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.athakar.R
+import com.example.athakar.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-    private lateinit var homeFragment : HomeFragment
+
+    //private lateinit var binding: FragmentHomeBinding
     private lateinit var athakarButtom:Button
     private lateinit var nameofButton:Button
     private lateinit var prayerTimeButton:Button
@@ -31,16 +33,19 @@ class HomeFragment : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
         ): View? {
+            ///SKIP CODE
+
+           // val bind = FragmentHomeBinding.inflate(layoutInflater)
+          //  return bind.root
+
             // Inflate the layout for this fragment
             return inflater.inflate(R.layout.fragment_home, container, false)
-
         }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-        athakarButtom=view.findViewById(R.id.athakarButtom)
+      athakarButtom=view.findViewById(R.id.athakarButtom)
         athakarButtom.setOnClickListener {
                findNavController().navigate(R.id.action_homeFragment_to_athkarActivity) }
 
@@ -83,7 +88,6 @@ class HomeFragment : Fragment() {
 
 
     }
-
 
 
     }
