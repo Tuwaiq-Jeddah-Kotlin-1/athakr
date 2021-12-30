@@ -7,8 +7,8 @@ import com.example.athakar.databinding.ItemCategoryBinding
 import com.example.athakar.ui.main.activity.Athkar.AthkarActivity
 
 
-class CategoryAdapter( val athkarActivity: AthkarActivity, val list: ArrayList<String>) :RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
-
+//class CategoryAdapter( val athkarActivity: AthkarActivity) :RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
+    class CategoryAdapter( val athkarActivity: AthkarActivity, val list: ArrayList<String>) :RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
     class CatViewHolder(val binding :ItemCategoryBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
@@ -23,10 +23,13 @@ class CategoryAdapter( val athkarActivity: AthkarActivity, val list: ArrayList<S
     }
 
     override fun onBindViewHolder(holder: CatViewHolder, position: Int) {
+
         holder.binding.itemText.text = list[position].toString()
+
 
     }
 
+   // override fun getItemCount()= 0
     override fun getItemCount()= list.size
 
 }
