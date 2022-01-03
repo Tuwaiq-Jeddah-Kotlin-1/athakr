@@ -67,7 +67,7 @@ class listTasbahFragment : Fragment() {
 
            }*/
 
-            //call the recycle view ////
+            ///call the recycle view ////
         rv_showData.layoutManager = LinearLayoutManager(context)
         rv_showData.adapter = TasbahAdapter(tasbah)
 

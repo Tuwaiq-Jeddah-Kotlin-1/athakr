@@ -19,78 +19,87 @@ class HomeFragment : Fragment() {
 
 
     //private lateinit var binding: FragmentHomeBinding
-    private lateinit var athakarButtom:Button
-    private lateinit var nameofButton:Button
-    private lateinit var prayerTimeButton:Button
-    private lateinit var quranButton:Button
-    private lateinit var calenderButton:Button
-    private lateinit var qiblaButton:Button
-    private lateinit var nearmousqButton: Button
-    private lateinit var OmrahButton:Button
+    private lateinit var athakarButtom: Button
+  //  private lateinit var nameofButton: Button
+  //  private lateinit var prayerTimeButton: Button
+  //  private lateinit var quranButton: Button
+    private lateinit var calenderButton: Button
+    private lateinit var qiblaButton: Button
+   // private lateinit var nearmousqButton: Button
+   // private lateinit var OmrahButton: Button
 
 
-        override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View? {
-            ///SKIP CODE
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        ///SKIP CODE
 
-           // val bind = FragmentHomeBinding.inflate(layoutInflater)
-          //  return bind.root
+        // val bind = FragmentHomeBinding.inflate(layoutInflater)
+        //  return bind.root
 
-            // Inflate the layout for this fragment
-            return inflater.inflate(R.layout.fragment_home, container, false)
-        }
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_home, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-      athakarButtom=view.findViewById(R.id.athakarButtom)
+        athakarButtom = view.findViewById(R.id.athakarButtom)
         athakarButtom.setOnClickListener {
-               findNavController().navigate(R.id.action_homeFragment_to_athkarActivity) }
+            findNavController().navigate(R.id.action_homeFragment_to_athkarActivity)
+        }
 
 
-        calenderButton=view.findViewById(R.id.calenderButton)
+        calenderButton = view.findViewById(R.id.calenderButton)
         calenderButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_calenderFragment) }
+            findNavController().navigate(R.id.action_homeFragment_to_calenderFragment)
+        }
+
+           qiblaButton = view.findViewById(R.id.qiblaButton)
+           qiblaButton.setOnClickListener {
+          findNavController().navigate(R.id.action_homeFragment_to_qublahActivity) }
 
 
-         nameofButton=view.findViewById(R.id.nameofButton)
-         nameofButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_nameofFragment) }
+       // nameofButton = view.findViewById(R.id.nameofButton)
+      //  nameofButton.setOnClickListener {
+           // findNavController().navigate(R.id.action_homeFragment_to_nameofFragment)
+       // }
 
 
-        quranButton=view.findViewById(R.id.quranButton)
-        quranButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_quranFragment) }
-
-
-        qiblaButton=view.findViewById(R.id.qiblaButton)
-        qiblaButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_qiblaFragment) }
-
-
-
-        prayerTimeButton=view.findViewById(R.id.prayerTimeButton)
-        prayerTimeButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_prayerTimeFragment) }
+      //  quranButton = view.findViewById(R.id.quranButton)
+      //  quranButton.setOnClickListener {
+          //  findNavController().navigate(R.id.action_homeFragment_to_quranFragment)
+        }
 
 
 
-        nearmousqButton=view.findViewById(R.id.nearmousqButton)
-        nearmousqButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_nearmousqFragment) }
 
 
-        OmrahButton=view.findViewById(R.id.OmrahButton)
-        OmrahButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_omrahFragment) }
+         //   prayerTimeButton = view.findViewById(R.id.prayerTimeButton)
+         //   prayerTimeButton.setOnClickListener {
+          //      findNavController().navigate(R.id.action_homeFragment_to_prayerTimeFragment)
+         //   }
 
 
+
+           // nearmousqButton = view.findViewById(R.id.nearmousqButton)
+           // nearmousqButton.setOnClickListener {
+             //   findNavController().navigate(R.id.action_homeFragment_to_nearmousqFragment)
+         //   }
+
+
+          ///  OmrahButton = view.findViewById(R.id.OmrahButton)
+          //  OmrahButton.setOnClickListener {
+            //    findNavController().navigate(R.id.action_homeFragment_to_omrahFragment)
+          //  }
+
+      //  }
     }
+//}
 
 
-    }
+
 
 
 

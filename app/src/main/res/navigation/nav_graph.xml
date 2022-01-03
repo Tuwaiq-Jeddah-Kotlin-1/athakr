@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/favoriteFragment"
@@ -54,7 +54,7 @@
         tools:layout="@layout/fragment_add" />
     <activity
         android:id="@+id/athkarActivity"
-        android:name="com.example.athakar.ui.main.activity.Athkar.AthkarActivity"
+        android:name="com.example.athakar.ui.main.activity.Api.ui.AthkarActivity"
         android:label="activity_athkar"
         tools:layout="@layout/activity_athkar" />
     <fragment
@@ -69,50 +69,15 @@
             android:id="@+id/action_homeFragment_to_calenderFragment"
             app:destination="@id/calenderFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_prayerTimeFragment"
-            app:destination="@id/prayerTimeFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_nameofFragment"
-            app:destination="@id/nameofFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_omrahFragment"
-            app:destination="@id/omrahFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_nearmousqFragment"
-            app:destination="@id/nearmousqFragment" />
+            android:id="@+id/action_homeFragment_to_qublahActivity"
+            app:destination="@id/qublahActivity" />
 
-        <action
-            android:id="@+id/action_homeFragment_to_quranFragment"
-            app:destination="@id/quranFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_qiblaFragment"
-            app:destination="@id/qiblaFragment" />
     </fragment>
     <fragment
         android:id="@+id/calenderFragment"
         android:name="com.example.athakar.ui.main.activity.Calender.CalenderFragment"
         android:label="fragment_calender"
         tools:layout="@layout/fragment_calender" />
-    <fragment
-        android:id="@+id/nameofFragment"
-        android:name="com.example.athakar.ui.main.activity.nameofFragment"
-        android:label="fragment_nameof"
-        tools:layout="@layout/fragment_nameof" />
-    <fragment
-        android:id="@+id/nearmousqFragment"
-        android:name="com.example.athakar.ui.main.activity.nearmousqFragment"
-        android:label="fragment_nearmousq"
-        tools:layout="@layout/fragment_nearmousq" />
-    <fragment
-        android:id="@+id/omrahFragment"
-        android:name="com.example.athakar.ui.main.activity.OmrahFragment"
-        android:label="fragment_omrah"
-        tools:layout="@layout/fragment_omrah" />
-    <fragment
-        android:id="@+id/prayerTimeFragment"
-        android:name="com.example.athakar.ui.main.activity.prayerTimeFragment"
-        android:label="fragment_prayer_time"
-        tools:layout="@layout/fragment_prayer_time" />
     <action
         android:id="@+id/action_registrationActivity_to_homeFragment"
         app:destination="@id/homeFragment" />
@@ -137,15 +102,10 @@
             android:id="@+id/action_sigupFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/quranFragment"
-        android:name="com.example.athakar.ui.main.activity.quranFragment"
-        android:label="fragment_quran"
-        tools:layout="@layout/fragment_quran" />
-    <fragment
-        android:id="@+id/qiblaFragment"
-        android:name="com.example.athakar.ui.main.activity.qiblaFragment"
-        android:label="fragment_qibla"
-        tools:layout="@layout/fragment_qibla" />
+    <activity
+        android:id="@+id/qublahActivity"
+        android:name="com.example.athakar.ui.main.qablah.QublahActivity"
+        android:label="activity_qublah"
+        tools:layout="@layout/activity_qublah" />
 
 </navigation>
