@@ -3,26 +3,123 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/homeFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.athakar.ui.main.fragment.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.athakar.ui.main.fragment.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+
     <fragment
         android:id="@+id/sabahFragment"
-        android:name="com.example.athakar.ui.main.fragment.SabahFragment"
+        android:name="com.example.athakar.ui.main.fragment.Sabah.ui.SabahFragment"
         android:label="fragment_sabah"
-        tools:layout="@layout/fragment_sabah" />
+        tools:layout="@layout/fragment_sabah" >
+        <action
+            android:id="@+id/action_sabahFragment_to_listTasbahFragment"
+            app:destination="@id/listTasbahFragment" />
+        <argument
+            android:defaultValue=""
+            app:nullable="true"
+            android:name="tzaker"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.example.athakar.ui.main.fragment.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTasbahFragment"
+        android:name="com.example.athakar.ui.main.fragment.Sabah.ui.listTasbahFragment"
+        android:label="fragment_list_tasbah"
+        tools:layout="@layout/fragment_list_tasbah" >
+        <action
+            android:id="@+id/action_listTasbahFragment_to_sabahFragment"
+            app:destination="@id/sabahFragment" />
+        <action
+            android:id="@+id/action_listTasbahFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.athakar.ui.main.fragment.Sabah.ui.addFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.athakar.ui.main.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_calenderFragment"
+            app:destination="@id/calenderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_qublahActivity"
+            app:destination="@id/qublahActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_athakerFragment"
+            app:destination="@id/athakerFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/calenderFragment"
+        android:name="com.example.athakar.ui.main.activity.Calender.CalenderFragment"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" />
+    <action
+        android:id="@+id/action_registrationActivity_to_homeFragment"
+        app:destination="@id/homeFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.athakar.ui.main.auth.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_sigupFragment"
+            app:destination="@id/sigupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sigupFragment"
+        android:name="com.example.athakar.ui.main.auth.SigupFragment"
+        android:label="fragment_sigup"
+        tools:layout="@layout/fragment_sigup" >
+        <action
+            android:id="@+id/action_sigupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/qublahActivity"
+        android:name="com.example.athakar.ui.main.qablah.QublahActivity"
+        android:label="activity_qublah"
+        tools:layout="@layout/activity_qublah" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.athakar.ui.main.activity.Api.ui.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="details"
+            app:argType="com.example.athakar.ui.main.activity.Api.model.Categories"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/athakerFragment"
+        android:name="com.example.athakar.ui.main.activity.Api.ui.AthakerFragment"
+        android:label="fragment_athaker"
+        tools:layout="@layout/fragment_athaker" >
+        <action
+            android:id="@+id/action_athakerFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
 </navigation>

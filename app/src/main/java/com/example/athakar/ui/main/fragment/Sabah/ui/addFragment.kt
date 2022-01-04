@@ -1,4 +1,4 @@
-package com.example.athakar.ui.main.fragment
+package com.example.athakar.ui.main.fragment.Sabah.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,15 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.athakar.R
 
-class SabahFragment : Fragment() {
+
+class addFragment : Fragment() {
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sabah, container, false)
+        return inflater.inflate(R.layout.fragment_add, container, false)
     }
 
 
-    }
+}
