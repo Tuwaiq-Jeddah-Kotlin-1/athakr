@@ -2,7 +2,7 @@ package com.example.athakar.ui.main.activity.Api.viewModel
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
-import com.example.athakar.ui.main.activity.Api.network.responceAkthar
+import com.example.athakar.ui.main.activity.Api.model.responceAkthar
 
 class AthkarViewModel: BaseObservable() {
 

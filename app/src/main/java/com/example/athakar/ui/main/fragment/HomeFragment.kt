@@ -18,15 +18,10 @@ import com.example.athakar.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
 
-    //private lateinit var binding: FragmentHomeBinding
+
     private lateinit var athakarButtom: Button
-  //  private lateinit var nameofButton: Button
-  //  private lateinit var prayerTimeButton: Button
-  //  private lateinit var quranButton: Button
     private lateinit var calenderButton: Button
     private lateinit var qiblaButton: Button
-   // private lateinit var nearmousqButton: Button
-   // private lateinit var OmrahButton: Button
 
 
     override fun onCreateView(
@@ -47,7 +42,7 @@ class HomeFragment : Fragment() {
 
         athakarButtom = view.findViewById(R.id.athakarButtom)
         athakarButtom.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_athkarActivity)
+            findNavController().navigate(R.id.action_homeFragment_to_athakerFragment)
         }
 
 

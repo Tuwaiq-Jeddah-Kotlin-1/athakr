@@ -41,9 +41,10 @@ class listTasbahFragment : Fragment() {
         bacK_counter_page.setOnClickListener {
             findNavController().navigate(R.id.action_listTasbahFragment_to_sabahFragment) }
 
+             /// rv///
         rv_showData=view.findViewById(R.id.rv_showData)
 
-
+            // write a list here //
 
         var tasbah = arrayListOf(
             Tasbah( "أَسْتَغْفِرُ اللَّهَ "),

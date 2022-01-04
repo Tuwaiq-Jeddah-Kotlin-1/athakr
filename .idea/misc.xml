@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable-v24/main_btn_bg.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.16944444444444445" />
         <entry key="app/src/main/res/layout/activity_athkar.xml" value="0.190625" />
+        <entry key="app/src/main/res/layout/activity_details.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -19,8 +20,10 @@
         <entry key="app/src/main/res/layout/azkar_item.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_athakar.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/fragment_athaker.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/fragment_athkar.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_calender.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_details.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/fragment_favorite.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_kindtasbah.xml" value="0.190625" />
@@ -37,6 +40,7 @@
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_sigup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_category.xml" value="0.190625" />
+        <entry key="app/src/main/res/layout/item_details.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.1425925925925926" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.1" />
       </map>

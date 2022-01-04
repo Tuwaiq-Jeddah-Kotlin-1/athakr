@@ -5,9 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.athakar.ui.main.activity.Api.network.Athaker
+import com.example.athakar.ui.main.activity.Api.model.Athaker
 import com.example.athakar.ui.main.activity.Api.network.athakerRepo
-import com.example.athakar.ui.main.activity.Api.network.responceAkthar
 import kotlinx.coroutines.launch
 
 class MainVM : ViewModel() {
