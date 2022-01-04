@@ -1,5 +1,6 @@
 package com.example.athakar.ui.main.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,10 +12,10 @@ import androidx.navigation.fragment.findNavController
 import com.example.athakar.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import retrofit2.http.Url
 
 class SettingFragment : Fragment() {
-
-
+    private lateinit var shareApp: TextView
     private lateinit var logout: TextView
 
     //var firebaseFirestore: FirebaseFirestore =FirebaseFirestore.getInstance()
@@ -42,8 +43,24 @@ class SettingFragment : Fragment() {
 
             val action = SettingFragmentDirections.actionSettingFragmentToLoginFragment()
             findNavController().navigate(action)
+
         }
+            //////SHARE APPP///////
+
+            val url ="https://www.google.com/?client=safari&channel=mac_bm"
+
+            shareApp = view.findViewById(R.id.shareapptext)
+            shareApp.setOnClickListener {
+
+                var intent = Intent(Intent.ACTION_SEND)
+                intent.type="text/plain"
+                intent.putExtra("share this link",url)
+                val chooser =Intent.createChooser(intent,"share using ")
+                startActivity(chooser)
+            }
 
 
+        }
     }
-}
+
+
