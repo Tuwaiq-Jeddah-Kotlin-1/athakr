@@ -113,8 +113,11 @@ class addFragment : Fragment() {
         return  view
     }
 
+
+       /// add fun
     fun save (tesbah : Tasbah){
-        db.collection("users").document( "$uid").collection("Tasbah").document("${tesbah.textId}")
+        db.collection("users").document( "$uid")
+            .collection("Tasbah").document("${tesbah.textId}")
             .set(tesbah)
     }
 
