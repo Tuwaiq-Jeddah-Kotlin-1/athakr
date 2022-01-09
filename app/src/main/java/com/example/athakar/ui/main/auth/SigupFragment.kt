@@ -24,9 +24,10 @@ class SigupFragment : Fragment() {
     private lateinit var username: EditText
     private lateinit var signUp: Button
     private lateinit var backToSignIn: TextView
-    var firebaseFirestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+    private lateinit var firebaseFirestore: FirebaseFirestore
     lateinit var ref: DatabaseReference
-    val auth: FirebaseAuth = FirebaseAuth.getInstance()
+    private lateinit var  auth: FirebaseAuth
+    private var Emale_pattern="[ a-zA-Z0-9._-]+@[a-z]+\\.+[a+z]+"
 
 
     override fun onCreateView(
@@ -49,7 +50,8 @@ class SigupFragment : Fragment() {
         backToSignIn = view.findViewById(R.id.tvloginlink)
         skip = view.findViewById(R.id.Skip)
 
-
+        firebaseFirestore  = FirebaseFirestore.getInstance()
+        auth=FirebaseAuth.getInstance()
 
         skip.setOnClickListener {
             val action = SigupFragmentDirections.actionRegistrationActivityToHomeFragment()
@@ -104,22 +106,36 @@ class SigupFragment : Fragment() {
             }
         }
 
-
     }
 
 
-}
+    /////// test /////////
 
-fun checkEmpty(arrayListOf: ArrayList<EditText>): Boolean {
-    var returnValue = false
-    for (i in arrayListOf) {
-        if (i.text.toString() == "") {
-            i.error = "must be filled"
-            returnValue = false
-        } else {
-            returnValue = true
+    fun email(email:String):Boolean{
+        if (email.matches(Emale_pattern.toRegex()))
+            return true
+        return false
+    }
+
+
+
+
+//////// frist one ///////////
+
+    fun checkEmpty(arrayListOf: ArrayList<EditText>): Boolean {
+        var returnValue = false
+        for (i in arrayListOf) {
+            if (i.text.toString() == "") {
+                i.error = "must be filled"
+                returnValue = false
+            } else {
+                returnValue = true
+            }
         }
+        return returnValue
     }
-    return returnValue
+
 }
+
+
 

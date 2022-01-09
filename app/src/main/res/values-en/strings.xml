@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Athakar</string>
+    <string name="reset">Rest</string>
+    <string name="enteryouremail">Please enter your email</string>
+    <string name="next">Next</string>
+    <string name="not_found">"not found "</string>
+    <string name="doaa">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="by_n_afnan_almohammdi">By   Afnan Almohammdi</string>
+    <string name="Hijricalendar">Hijri Calender</string>
+    <string name="Alazakar">Athaker</string>
+    <string name="Hijricalendarppp">Hijri Calender</string>
+    <string name="Qibla">Qibla</string>
+    <string name="pleaseenteryouremail">please enter your email</string>
+    <string name="pleaseenteryourpassword">please enter your password</string>
+    <string name="login">Login</string>
+    <string name="newaccount">Signup</string>
+    <string name="skippp">Skip</string>
+    <string name="reste">Rest</string>
+    <string name="setting">Setting</string>
+    <string name="darkmode">Dark mode</string>
+    <string name="english">English</string>
+    <string name="shareapp">Share app</string>
+    <string name="logout">Log out</string>
+    <string name="username">Please Enter user name</string>
+    <string name="password">Please enter your password</string>
+    <string name="repassword">"Please enter password "</string>
+    <string name="signup">SignUp</string>
+    <string name="haveaccount">have Account!</string>
+    <string name="skip">Skip</string>
+    <string name="hello_blank_fragment">"                    "</string>
+    <string name="title_activity_qiblah">"qibah "</string>
+    <string name="first_fragment_label">1</string>
+    <string name="second_fragment_label">1</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="stop_notifications">"notification "</string>
+    <string name="Athaker">Athaker</string>
+    <string name="hello_second_fragment">1</string>
+</resources>

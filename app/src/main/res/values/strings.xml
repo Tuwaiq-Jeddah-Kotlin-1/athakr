@@ -2,7 +2,7 @@
     <string name="app_name">Athakar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="reset" />
+    <string name="reset">اعادة</string>
     <string name="enteryouremail">الرجاء ادخال الايميل</string>
     <string name="title_activity_qiblah">qiblahActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -13,7 +13,31 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="not_found">not found</string>
-    <string name="stop_notifications" />
+    <string name="not_found">غير موجود</string>
+    <string name="stop_notifications">"notification "</string>
+    <string name="Athaker">الاذكار</string>
+    <string name="doaa">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="by_n_afnan_almohammdi">By \n Afnan Almohammdi</string>
+    <string name="Hijricalendar">التقويم الهجري</string>
+    <string name="Alazakar">الأذكار</string>
+    <string name="Hijricalendarppp">التقويم الهجري</string>
+    <string name="Qibla">القبلة</string>
+    <string name="pleaseenteryouremail">الرجاء ادخال الايميل</string>
+    <string name="pleaseenteryourpassword">الرجاء ادخال السري</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="newaccount">تسجيل حساب جديد</string>
+    <string name="skippp">اذا كنت لا تريد التسجيل اضغط هنا</string>
+    <string name="reste">إعادة</string>
+    <string name="setting">االإعدادات الخاصة بي</string>
+    <string name="darkmode">الوضع الليلي</string>
+    <string name="english">English</string>
+    <string name="shareapp">مشاركة التطبيق</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="username">الرجاء اسم المسخدم</string>
+    <string name="password">الرجاء ادخال السري</string>
+    <string name="repassword">الرجاء ادخال السري مرة اخري</string>
+    <string name="signup">تسجيل</string>
+    <string name="haveaccount">لديك حساب بالفعل !</string>
+    <string name="skip">اذا كنت لا تريد التسجيل اضغط هنا</string>
 
 </resources>

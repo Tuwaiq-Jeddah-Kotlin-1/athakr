@@ -28,7 +28,7 @@
             android:textColor="@color/Tiffany"
             android:textSize="15sp"
             android:fontFamily="@font/logo_font"
-            android:text="التقويم الهجري"
+            android:text="@string/Hijricalendar"
             app:layout_constraintBottom_toBottomOf="@+id/back_img_btn"
             app:layout_constraintEnd_toStartOf="@+id/back_img_btn"
             app:layout_constraintTop_toTopOf="@+id/back_img_btn"/>

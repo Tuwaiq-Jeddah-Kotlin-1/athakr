@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="108dp"
             android:fontFamily="@font/home"
-            android:text="االإعدادات الخاصة بي"
+            android:text="@string/setting"
             android:textColor="@color/Tiffany"
             android:textSize="17dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -49,26 +49,20 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
-                android:src="@drawable/ic_nightmode" />
+                android:src="@drawable/ic_nightmode"/>
 
             <TextView
+                android:id="@+id/editNmae"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
-                android:gravity="center"
                 android:fontFamily="@font/home"
-                android:text="الوضع الليلي"
-                android:textColor="@color/Tiffany"
+                android:gravity="center"
+                android:text="تعديل الاسم "
+                android:textColor="@color/purple_500"
                 android:textSize="18dp" />
 
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:id="@+id/btn_switch_theme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="12dp"
-                android:backgroundTint="@color/Tiffany" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,19 +87,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
-                android:gravity="center"
                 android:fontFamily="@font/home"
-                android:text="English "
+                android:gravity="center"
+                android:text="@string/english"
                 android:textColor="@color/Tiffany"
                 android:textSize="18dp" />
 
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:id="@+id/btn_english"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="12dp"
-                android:backgroundTint="@color/Tiffany" />
+
 
 
         </LinearLayout>
@@ -126,13 +114,14 @@
                 android:src="@drawable/ic_share" />
 
             <TextView
+                android:id="@+id/shareapptext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/home"
                 android:gravity="center"
-                android:text="مشاركة التطبيق"
+                android:text="@string/shareapp"
                 android:textColor="@color/Tiffany"
                 android:textSize="18dp" />
 
@@ -163,7 +152,7 @@
                 android:layout_marginStart="15dp"
                 android:fontFamily="@font/home"
                 android:gravity="center"
-                android:text="تسجيل الخروج"
+                android:text="@string/logout"
                 android:textColor="@color/Tiffany"
                 android:textSize="18dp" />
 
