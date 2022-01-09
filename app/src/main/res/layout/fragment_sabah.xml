@@ -53,7 +53,7 @@
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="إعادة"
+            android:text="@string/reste"
             android:textColor="@color/Tiffany"
             android:textSize="30sp" />
     </LinearLayout>

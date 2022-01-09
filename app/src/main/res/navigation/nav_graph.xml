@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_settingFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/listTasbahFragment"
@@ -45,13 +48,26 @@
         <action
             android:id="@+id/action_listTasbahFragment_to_addFragment"
             app:destination="@id/addFragment" />
+        <argument
+            android:name="addnew"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="false"/>
 
     </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.athakar.ui.main.fragment.Sabah.ui.addFragment"
         android:label="fragment_add"
-        tools:layout="@layout/fragment_add" />
+        tools:layout="@layout/fragment_add" >
+        <argument
+            android:name="addTasbah"
+            app:argType="string"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_addFragment_to_listTasbahFragment"
+            app:destination="@id/listTasbahFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.athakar.ui.main.fragment.HomeFragment"
@@ -121,5 +137,10 @@
             android:id="@+id/action_athakerFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.athakar.ui.main.profileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 
 </navigation>

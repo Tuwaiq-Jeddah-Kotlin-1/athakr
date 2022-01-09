@@ -111,8 +111,6 @@ class SigupFragment : Fragment() {
 
     /////// test /////////
 
-
-
     fun email(email:String):Boolean{
         if (email.matches(Emale_pattern.toRegex()))
             return true

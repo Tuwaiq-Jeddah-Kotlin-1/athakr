@@ -102,9 +102,12 @@ class DetailsAdapter (val detailsList: List<responceAkthar>): RecyclerView.Adapt
         private fun addzaker(name: String, counterday: String, idzaker: String) {
 
             val addFavorite = hashMapOf(
-                "namezaker" to name,
-                "counterday" to counterday,
-                "id" to idzaker
+
+                "count" to counterday,
+                "description" to name,
+                "reference" to " gg",
+                "content" to idzaker
+
             )
             Log.e("tag", "add like")
             firestore.collection("users").document(usersId.toString())

@@ -1,7 +1,9 @@
 package com.example.athakar.ui.main.activity.Api.model
 
 import android.os.Parcelable
- import kotlinx.android.parcel.Parcelize
+import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.firestore.QueryDocumentSnapshot
+import kotlinx.android.parcel.Parcelize
 import kotlinx.android.parcel.RawValue
 
 @Parcelize
@@ -25,4 +27,17 @@ data class responceAkthar(
     val description:String,
     val reference:String,
     val content:String,
-):Parcelable
+):Parcelable{
+
+}
+fun QueryDocumentSnapshot.toResponceAkthar(): responceAkthar? {
+    return try {
+        val count = getString("count")!!
+        val description = getString("description")!!
+        val content = getString("content")!!
+        val reference = getString("reference")!!
+        responceAkthar(count, description,reference,content)
+    } catch (e: Exception) {
+        null
+    }
+}

@@ -67,8 +67,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
 
     // Coroutines Library
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.4.1"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
-
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
@@ -83,6 +83,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.1'
     implementation 'com.google.firebase:firebase-firestore-ktx:24.0.0'
     implementation 'com.google.firebase:firebase-database-ktx:20.0.3'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
 
     //calender
     implementation 'com.github.eltohamy:material-hijri-calendarview:1.1.2'
