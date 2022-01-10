@@ -59,7 +59,11 @@ class TasbahAdapter( val tasbahList: MutableList<Tasbah>) : RecyclerView.Adapter
 
 
         holder.delett.setOnClickListener {
-           delete()
+           delete(dd)
+
+          tasbahList.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position,itemCount)
         }
 
         // to on click lesser
@@ -70,23 +74,15 @@ class TasbahAdapter( val tasbahList: MutableList<Tasbah>) : RecyclerView.Adapter
     val uid = FirebaseAuth.getInstance().currentUser?.uid
     var db = FirebaseFirestore.getInstance()
 
-    fun delete (){
+
+    fun delete (tasid :String){
         try {
 
-            (uid?.let { it1 ->
-                db.collection("users").document("$uid").collection("Tasbah").document(
-                it1
+           /// delet code friesore
+    db.collection("users").document("$uid").collection("Tasbah")
+        .document(tasid).delete()
 
-                ).delete()
-            }?.addOnSuccessListener {
-              Log.e("ddd","succsess")
-              //Toast.makeText("  ", "Successfully deleted image", Toast.LENGTH_SHORT).show()
 
-            }?.addOnFailureListener {
-               //  Toast.makeText(context, "failed to delete the image", Toast.LENGTH_SHORT).show()
-                Log.e("ffff","ffff")
-
-            })
         } catch (e: Exception) {
             Log.e("e","eeeee")
 

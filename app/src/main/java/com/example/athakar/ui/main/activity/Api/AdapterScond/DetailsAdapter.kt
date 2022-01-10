@@ -45,21 +45,21 @@ class DetailsAdapter (val detailsList: List<responceAkthar>): RecyclerView.Adapt
 
         ///// like
         holder.like.setOnClickListener {
-            holder.updatelike(o.content, o.count, o.content)
+           // holder.updatelike(o.content, o.count, o.content)
 
         }
 
 
-        firestore.collection("users").document(usersId.toString()).collection("like")
-            .document(o.content.toString()).get()
-            .addOnCompleteListener {
-                if (it.result?.exists()!!) {
-                    holder.like.setImageResource(R.drawable.ic_baseline_favorite_24)
-
-                } else {
-                    holder.like.setImageResource(R.drawable.ic_baseline_favorite_border_24)
-                }
-            }
+//        firestore.collection("users").document(usersId.toString()).collection("like")
+//            .document(o.content.toString()).get()
+//            .addOnCompleteListener {
+//                if (it.result?.exists()!!) {
+//                    holder.like.setImageResource(R.drawable.ic_baseline_favorite_24)
+//
+//                } else {
+//                    holder.like.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+//                }
+         //   }
 
 
 

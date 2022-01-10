@@ -52,15 +52,8 @@ class listTasbahFragment : Fragment() {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_list_tasbah, container, false)
 
-
-
-
     return view
     }
-
-
-
-
 
 
 
@@ -77,10 +70,6 @@ class listTasbahFragment : Fragment() {
         bacK_counter_page.setOnClickListener {
             findNavController().navigate(R.id.action_listTasbahFragment_to_sabahFragment)
         }
-
-
-
-
 
 
         /// rv///
@@ -140,7 +129,6 @@ class listTasbahFragment : Fragment() {
         if (args.addnew != null) {
            tasbah.add(Tasbah(args.addnew.toString()))
 
-
         }
 
 
@@ -173,12 +161,6 @@ class listTasbahFragment : Fragment() {
 //        })
 
     }
-
-
-
-
-
-
 
 
 
