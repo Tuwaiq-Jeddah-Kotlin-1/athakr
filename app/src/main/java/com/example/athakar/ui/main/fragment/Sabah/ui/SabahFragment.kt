@@ -81,52 +81,52 @@ class SabahFragment : Fragment() {
 
             if (increament_number ==10) {
                 incrementtext.text = increament_number.toString()
-                Toast.makeText(context, "اسرع في الجنة قريبة", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, " ", Toast.LENGTH_SHORT).show()
             } else if (increament_number == 20) {
                 incrementtext.text = increament_number.toString()
-                Toast.makeText(context, "بينك  و بين الجنة يقف ملك الموت ", Toast.LENGTH_SHORT)
+                Toast.makeText(context, " ", Toast.LENGTH_SHORT)
                     .show()
             } else if (increament_number == 30) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "ايها المنافق لماذا لا تجتهد في التسبيح   ",
+                    context, "  ",
                     Toast.LENGTH_SHORT
                 ).show()
             } else if (increament_number == 40) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "هنيا لك اصبحت مسيلمة الكذاب ",
+                    context, "   ",
                     Toast.LENGTH_SHORT).show()
             }else if (increament_number == 50) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "لم يتبقي للجنة سوي 50 حسنة ",
+                    context, "  ",
                     Toast.LENGTH_SHORT).show()
             }
             else if (increament_number == 60) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "اسرع اسرع في نار جهنم تحرق  ",
+                    context, "   ",
                     Toast.LENGTH_SHORT).show()
             }else if (increament_number == 70) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "ان ابليس يمعنك من الاكمال",
+                    context, " ",
                     Toast.LENGTH_SHORT).show()
             }else if (increament_number == 80) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "هل تعلم ان ادم كان في الجنة ",
+                    context, "  ",
                     Toast.LENGTH_SHORT).show()
             }else if (increament_number == 90) {
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "لقد هزمت ابليس ",
+                    context, "  ",
                     Toast.LENGTH_SHORT).show()
             }else { (increament_number <  100)
                 incrementtext.text = increament_number.toString()
                 Toast.makeText(
-                    context, "لقد فاتك مقعدك بجانب ابو لهب في النار  ",
+                    context, " ",
                     Toast.LENGTH_SHORT).show()
             }
 
