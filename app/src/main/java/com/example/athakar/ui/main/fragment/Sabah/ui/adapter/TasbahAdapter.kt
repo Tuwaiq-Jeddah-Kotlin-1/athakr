@@ -60,6 +60,10 @@ class TasbahAdapter( val tasbahList: MutableList<Tasbah>) : RecyclerView.Adapter
 
         holder.delett.setOnClickListener {
            delete(dd)
+
+          tasbahList.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position,itemCount)
         }
 
         // to on click lesser
@@ -77,6 +81,7 @@ class TasbahAdapter( val tasbahList: MutableList<Tasbah>) : RecyclerView.Adapter
            /// delet code friesore
     db.collection("users").document("$uid").collection("Tasbah")
         .document(tasid).delete()
+
 
         } catch (e: Exception) {
             Log.e("e","eeeee")
