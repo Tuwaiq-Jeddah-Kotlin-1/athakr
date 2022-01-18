@@ -1,20 +1,19 @@
 <resources>
-    <string name="app_name">Athakar</string>
+    <string name="app_name">"اذكار "</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="reset">اعادة</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Reset">اعادة</string>
     <string name="enteryouremail">الرجاء ادخال الايميل</string>
-    <string name="title_activity_qiblah">qiblahActivity</string>
+    <string name="title_activity_qiblah" translatable="false">qiblahActivity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="not_found">غير موجود</string>
-    <string name="stop_notifications">"notification "</string>
     <string name="Athaker">الاذكار</string>
     <string name="doaa">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
     <string name="by_n_afnan_almohammdi">By \n Afnan Almohammdi</string>
@@ -24,7 +23,6 @@
     <string name="Qibla">القبلة</string>
     <string name="pleaseenteryouremail">الرجاء ادخال الايميل</string>
     <string name="pleaseenteryourpassword">الرجاء ادخال السري</string>
-    <string name="login">تسجيل الدخول</string>
     <string name="newaccount">تسجيل حساب جديد</string>
     <string name="skippp">اذا كنت لا تريد التسجيل اضغط هنا</string>
     <string name="reste">إعادة</string>
@@ -39,5 +37,34 @@
     <string name="signup">تسجيل</string>
     <string name="haveaccount">لديك حساب بالفعل !</string>
     <string name="skip">اذا كنت لا تريد التسجيل اضغط هنا</string>
+    <string name="athkralmuslim">برنامج اذكار المسلم</string>
+    <string name="quran" translatable="false">( نُّورٌ عَلَىٰ نُورٍ ۗ يَهْدِي اللَّهُ لِنُورِهِ مَن يَشَاءُ )</string>
+    <string name="by_n_afnan_almohammadi" translatable="false">By \n Afnan Almohammadi</string>
+    <string name="addhere">اضف التسبيح هنا</string>
+    <string name="add">اضافة</string>
+    <string name="qurqn1" translatable="false">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="quran3" translatable="false">﴿ فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ ﴾</string>
+    <string name="enteremail">الرجاء ادخال الايميل</string>
+    <string name="passwordenter">الرجاء ادخال الرقم السري</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="qurqn" translatable="false">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="name">"الاسم "</string>
+    <string name="email">الايميل :</string>
+    <string name="usernamee">اسم المسخدم :</string>
+    <string name="noaccount">لايوجد حساب</string>
+    <string name="update">تعديل</string>
+    <string name="settingr">الاعدادات</string>
+    <string name="editnqme">تعديل الاسم</string>
+    <string name="change">تغيير اللغة</string>
+    <string name="usernameee">الرجاء ادخال اسم المستخدم</string>
+    <string name="passworddd">الرجاء ادخال الرقم السري</string>
+    <string name="agine">الرجاء ادخال الرقم السري مرة اخرى</string>
+    <string name="update_your_information">تعديل معلوماتك</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="edit">"تعديل "</string>
+    <string name="stop_notifications">اشعارات</string>
+    <string name="Home">الرئيسية</string>
+    <string name="Sabha">السبحة</string>
+    <string name="Setting">الاعدادات</string>
 
 </resources>

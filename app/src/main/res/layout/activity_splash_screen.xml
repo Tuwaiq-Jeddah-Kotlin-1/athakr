@@ -4,29 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".ui.Splash.SplashScreen">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="312dp"
-        android:layout_height="314dp"
+        android:layout_width="405dp"
+        android:layout_height="349dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/logo"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/Athaker"
+        android:fontFamily="@font/scheherazade_bold"
+        android:text="@string/athkralmuslim"
         android:textColor="@color/Tiffany"
-        android:textSize="32sp"
+        android:textSize="34dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -35,13 +38,14 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quran_font"
         android:gravity="center"
-        android:text="@string/doaa"
+        android:text="@string/quran"
         android:textColor="@color/green"
-        android:textSize="16dp"
-        android:fontFamily="@font/fadl_medium"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -51,19 +55,35 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:gravity="center"
-        android:text="@string/by_n_afnan_almohammdi"
+        android:fontFamily="@font/scheherazade_bold"
+        android:text="@string/by_n_afnan_almohammadi"
         android:textColor="@color/Tiffany"
-        android:textSize="18sp"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/start">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

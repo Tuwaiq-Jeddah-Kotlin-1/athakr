@@ -34,9 +34,6 @@ class profileFragment : Fragment() {
     val db = FirebaseFirestore.getInstance()
 
 
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -63,7 +60,6 @@ class profileFragment : Fragment() {
         }
 
         getUserInfo()
-
     }
 
 

@@ -4,158 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundt">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="95dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/home"
+        android:text="@string/settingr"
+        android:textColor="@color/Tiffany"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="138.5dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#EAEAEA"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/home"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="0dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="108dp"
-            android:fontFamily="@font/home"
-            android:text="@string/setting"
-            android:textColor="@color/Tiffany"
-            android:textSize="17dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.885"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:src="@drawable/ic_baseline_person_24"/>
 
-        <View
-            android:id="@+id/view"
-            android:layout_width="138.5dp"
-            android:layout_height="1.5dp"
-            android:layout_marginTop="8dp"
-            android:background="#EAEAEA"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+      <TextView
+          android:id="@+id/editNmae"
+          android:layout_width="wrap_content"
+          android:layout_height="28dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:fontFamily="@font/home"
+          android:gravity="center"
+          android:text="@string/editnqme"
+          android:textColor="@color/Tiffany"
+          android:textSize="18dp" />
 
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/home"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            tools:layout_editor_absoluteX="0dp">
+    <LinearLayout
+        android:id="@+id/show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:src="@drawable/ic_nightmode"/>
+      <ImageView
+          android:id="@+id/item_image_azkaree"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:src="@drawable/ic_baseline_language_24" />
 
-            <TextView
-                android:id="@+id/editNmae"
-                android:layout_width="wrap_content"
-                android:layout_height="28dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/home"
-                android:gravity="center"
-                android:text="تعديل الاسم "
-                android:textColor="@color/purple_500"
-                android:textSize="18dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/show_dialog"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            tools:layout_editor_absoluteX="0dp">
-
-            <ImageView
-                android:id="@+id/item_image_azkaree"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:src="@drawable/ic_baseline_language_24" />
-
-            <TextView
-                android:id="@+id/item_english"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/home"
-                android:gravity="center"
-                android:text="@string/english"
-                android:textColor="@color/Tiffany"
-                android:textSize="18dp" />
+      <TextView
+          android:id="@+id/item_english"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:fontFamily="@font/home"
+          android:gravity="center"
+          android:text="@string/change"
+          android:textColor="@color/Tiffany"
+          android:textSize="18dp" />
 
 
 
 
-        </LinearLayout>
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/shareapp"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/show_dialog"
-            tools:layout_editor_absoluteX="0dp">
+    <LinearLayout
+        android:id="@+id/shareapp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/show_dialog"
+        tools:layout_editor_absoluteX="0dp">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:src="@drawable/ic_share" />
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:src="@drawable/ic_baseline_share_24" />
 
-            <TextView
-                android:id="@+id/shareapptext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/home"
-                android:gravity="center"
-                android:text="@string/shareapp"
-                android:textColor="@color/Tiffany"
-                android:textSize="18dp" />
+      <TextView
+          android:id="@+id/shareapptext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:fontFamily="@font/home"
+          android:gravity="center"
+          android:text="@string/shareapp"
+          android:textColor="@color/Tiffany"
+          android:textSize="18dp" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/logout76"
-            android:layout_width="403dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shareapp">
+    <LinearLayout
+        android:id="@+id/logout76"
+        android:layout_width="403dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shareapp">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:src="@drawable/ic_baseline_exit_to_app_24" />
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:src="@drawable/ic_baseline_exit_to_app_24" />
 
-            <TextView
-                android:id="@+id/logout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="15dp"
-                android:fontFamily="@font/home"
-                android:gravity="center"
-                android:text="@string/logout"
-                android:textColor="@color/Tiffany"
-                android:textSize="18dp" />
+      <TextView
+          android:id="@+id/logout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="15dp"
+          android:fontFamily="@font/home"
+          android:gravity="center"
+          android:text="@string/logout"
+          android:textColor="@color/Tiffany"
+          android:textSize="18dp" />
 
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

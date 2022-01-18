@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Athakar</string>
-    <string name="reset">Rest</string>
-    <string name="enteryouremail">Please enter your email</string>
+    <string name="Reset">Rest</string>
+    <string name="enteryouremail">Please Enter your Email</string>
     <string name="next">Next</string>
-    <string name="not_found">"not found "</string>
+    <string name="not_found">"Not Found "</string>
     <string name="doaa">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
     <string name="by_n_afnan_almohammdi">By   Afnan Almohammdi</string>
     <string name="Hijricalendar">Hijri Calender</string>
     <string name="Alazakar">Athaker</string>
     <string name="Hijricalendarppp">Hijri Calender</string>
     <string name="Qibla">Qibla</string>
-    <string name="pleaseenteryouremail">please enter your email</string>
-    <string name="pleaseenteryourpassword">please enter your password</string>
+    <string name="pleaseenteryouremail">Please Enter your Email</string>
+    <string name="pleaseenteryourpassword">Please Enter your Password</string>
     <string name="login">Login</string>
-    <string name="newaccount">Signup</string>
+    <string name="newaccount">Sign up</string>
     <string name="skippp">Skip</string>
     <string name="reste">Rest</string>
     <string name="setting">Setting</string>
@@ -22,19 +22,46 @@
     <string name="english">English</string>
     <string name="shareapp">Share app</string>
     <string name="logout">Log out</string>
-    <string name="username">Please Enter user name</string>
-    <string name="password">Please enter your password</string>
-    <string name="repassword">"Please enter password "</string>
+    <string name="username">Please Enter User Name</string>
+    <string name="password">Please Enter Your Password</string>
+    <string name="repassword">"Please Enter Password "</string>
     <string name="signup">SignUp</string>
-    <string name="haveaccount">have Account!</string>
+    <string name="haveaccount">Have Account!</string>
     <string name="skip">Skip</string>
-    <string name="hello_blank_fragment">"                    "</string>
     <string name="title_activity_qiblah">"qibah "</string>
     <string name="first_fragment_label">1</string>
     <string name="second_fragment_label">1</string>
     <string name="previous">Previous</string>
     <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="stop_notifications">"notification "</string>
+    <string name="stop_notifications">"Notification "</string>
     <string name="Athaker">Athaker</string>
     <string name="hello_second_fragment">1</string>
+    <string name="athkralmuslim">Athkar Muslim</string>
+    <string name="addhere">Add Tasbah</string>
+    <string name="add">Add</string>
+    <string name="enteremail">Please Enter your Email</string>
+    <string name="passwordenter">"Please Enter Password "</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="usernamee">User Name</string>
+    <string name="noaccount">"No Account "</string>
+    <string name="update">Edit</string>
+    <string name="settingr">Setting</string>
+    <string name="editnqme">Edit Name</string>
+    <string name="change">Change language</string>
+    <string name="passworddd">"Please Enter Password "</string>
+    <string name="usernameee">Please Enter User Name</string>
+    <string name="agine">"Please  Renter Password "</string>
+    <string name="update_your_information">Update Your Information</string>
+    <string name="user_name">User Name</string>
+    <string name="edit">Edit</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="quran" translatable="false">( نُّورٌ عَلَىٰ نُورٍ ۗ يَهْدِي اللَّهُ لِنُورِهِ مَن يَشَاءُ )</string>
+    <string name="by_n_afnan_almohammadi" translatable="false">By   Afnan Almohammadi</string>
+    <string name="qurqn1" translatable="false">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="quran3" translatable="false">﴿ فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ ﴾</string>
+    <string name="qurqn" translatable="false">«الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّه أَلا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ»</string>
+    <string name="Home">Home</string>
+    <string name="Sabha">Sabha</string>
+    <string name="Setting">Setting</string>
 </resources>
