@@ -6,54 +6,36 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/backgroundt"
         tools:context=".ui.calender.CalenderFragment">
-
-        <ImageButton
-            android:id="@+id/back_img_btn"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/ic_baseline_close_24"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.892"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/fiqh_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:textColor="@color/Tiffany"
-            android:textSize="15sp"
-            android:fontFamily="@font/logo_font"
-            android:text="@string/Hijricalendar"
-            app:layout_constraintBottom_toBottomOf="@+id/back_img_btn"
-            app:layout_constraintEnd_toStartOf="@+id/back_img_btn"
-            app:layout_constraintTop_toTopOf="@+id/back_img_btn"/>
 
         <com.github.eltohamy.materialhijricalendarview.MaterialHijriCalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fiqh_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.154"
             app:mcv_calendarDiff="2" />
 
         <TextView
             android:id="@+id/hijri_date_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="206dp"
+            android:layout_height="72dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:fontFamily="@font/home"
+            android:gravity="center"
+            android:textColor="@color/Tiffany"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

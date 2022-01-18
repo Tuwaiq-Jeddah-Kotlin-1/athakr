@@ -30,7 +30,7 @@ class listTasbahFragment : Fragment() {
 
 
     private lateinit var addTassbah: ImageView
-    private lateinit var bacK_counter_page: ImageView
+    private lateinit var display: ImageView
     private lateinit var rv_showData: RecyclerView
     private lateinit var tasbah: TasbahAdapter
     private var listSize: Int = 0
@@ -66,10 +66,12 @@ class listTasbahFragment : Fragment() {
             findNavController().navigate(R.id.action_listTasbahFragment_to_addFragment)
         }
 
-        bacK_counter_page = view.findViewById(R.id.bacK_counter_page)
-        bacK_counter_page.setOnClickListener {
+
+        display = view.findViewById(R.id.display)
+        display.setOnClickListener {
             findNavController().navigate(R.id.action_listTasbahFragment_to_sabahFragment)
         }
+
 
 
         /// rv///
@@ -91,15 +93,15 @@ class listTasbahFragment : Fragment() {
             Tasbah("سُبْحَانَ اللَّهِ ، وَالْحَمْدُ لِلَّهِ ، وَلا إِلَهَ إِلا اللَّهُ ، وَاللَّهُ أَكْبَرُ ، اللَّهُمَّ اغْفِرْ لِي ، اللَّهُمَّ ارْحَمْنِي ، اللَّهُمَّ ارْزُقْنِي"),
             Tasbah("أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ، وَأَتُوبُ إِلَيْهِ"),
 
-        )
+            )
 
         var textList: MutableLiveData<MutableList<Tasbah>> = MutableLiveData()
         var textListIn = mutableListOf<Tasbah>()
 
         rv_showData.layoutManager = LinearLayoutManager(context)
 
-          db.collection("users").document("$uid").collection("Tasbah")
-              .get()
+        db.collection("users").document("$uid").collection("Tasbah")
+            .get()
 
             .addOnCompleteListener()
             {
@@ -127,67 +129,12 @@ class listTasbahFragment : Fragment() {
 
 
         if (args.addnew != null) {
-           tasbah.add(Tasbah(args.addnew.toString()))
+            tasbah.add(Tasbah(args.addnew.toString()))
 
         }
 
 
-        // var add = arrayListOf(o)
-
-
-        /*
-           rv_showData.apply {
-
-              layoutManager = LinearLayoutManager(this@listTasbahFragment)
-               adapter = TasbahAdapter(tasbah)
-
-           }*/
-
-
-        ///call the recycle view ////
-
-
-        //  rv_showData.adapter = TasbahAdapter(args.addnew.toString())
-
-
-
-
-//
-//        fetchText(viewLifecycleOwner).observe(viewLifecycleOwner, {
-//
-//
-//            listSize = it.size
-//            rv_showData.adapter =TasbahAdapter(tasbah)
-//        })
-
     }
-
-
-
-//            db.collection("users").document("$uid").collection("Tasbah").get()
-//                .addOnCompleteListener() {
-//                    it.addOnSuccessListener { snapshot ->
-//                        snapshot?.let { docSnap ->
-//                            var documents = docSnap.documents
-//                            documents.forEach { documents ->
-//                                var textObj = documents.toObject(Tasbah::class.java)
-//
-//
-//                                textObj?.let {
-//                                    Log.d("text Obj", textObj.toString())
-//                                    textListIn.add
-//                                    Log.d("text textListIn", textListIn.toString())
-//                                }
-//                            }
-//                            textList.value = textListIn
-//                            Log.d("text List", textList.toString())
-//                        }
-                   // }
-               //  }
-
-             // return textList
-
-    //}
 
 }
 
