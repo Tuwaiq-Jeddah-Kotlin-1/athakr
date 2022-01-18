@@ -20,8 +20,6 @@ import com.example.athakar.R
 
 class SabahFragment : Fragment() {
 
-    // lateinit var binding: FragmentSabahBinding
-
     private lateinit var display: ImageView
     private lateinit var incrementtext: TextView
     private lateinit var restButton: Button
@@ -45,16 +43,11 @@ class SabahFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //binding = FragmentSabahBinding.inflate(layoutInflater)
+
 
         athakerkind = view.findViewById(R.id.athakerkind)
 
         athakerkind.text = arg.tzaker.toString()
-//        if(arg){
-//            athakerkind.text= " nathk"
-//        }else{
-//            athakerkind.text= arg.tzaker.toString()
-//        }
 
 
         display = view.findViewById(R.id.display)
@@ -66,70 +59,18 @@ class SabahFragment : Fragment() {
         // counter code
 
 
-        var increament_number = 0
-        val counterTAS = preferencesTasbah.getInt("counter", 100)
+        var increament_number = preferencesTasbah.getInt("counter", 0)
+        val counterTAS = preferencesTasbah.getInt("counter", 0)
         incrementtext = view.findViewById(R.id.incrementtext)
+        incrementtext.text=preferencesTasbah.getInt("counter", 0).toString()
         incrementtext.setOnClickListener {
 
-            increament_number++
+            increament_number ++
             preferencesTasbah.edit().putInt("counter", increament_number).apply()
             //val counterTAS = preferencesTasbah.getInt("counter",100)
 
-            //incrementtext.text = increament_number.toString()
+            incrementtext.text = increament_number.toString()
             //incrementtext.text = counterTAS.toString()
-
-
-            if (increament_number ==10) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(context, " ", Toast.LENGTH_SHORT).show()
-            } else if (increament_number == 20) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(context, " ", Toast.LENGTH_SHORT)
-                    .show()
-            } else if (increament_number == 30) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "  ",
-                    Toast.LENGTH_SHORT
-                ).show()
-            } else if (increament_number == 40) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "   ",
-                    Toast.LENGTH_SHORT).show()
-            }else if (increament_number == 50) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "  ",
-                    Toast.LENGTH_SHORT).show()
-            }
-            else if (increament_number == 60) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "   ",
-                    Toast.LENGTH_SHORT).show()
-            }else if (increament_number == 70) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, " ",
-                    Toast.LENGTH_SHORT).show()
-            }else if (increament_number == 80) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "  ",
-                    Toast.LENGTH_SHORT).show()
-            }else if (increament_number == 90) {
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, "  ",
-                    Toast.LENGTH_SHORT).show()
-            }else { (increament_number <  100)
-                incrementtext.text = increament_number.toString()
-                Toast.makeText(
-                    context, " ",
-                    Toast.LENGTH_SHORT).show()
-            }
-
 
 
 
@@ -137,10 +78,11 @@ class SabahFragment : Fragment() {
 
             restButton = view.findViewById(R.id.reset)
             restButton.setOnClickListener {
-
                 increament_number = 0
                 incrementtext.text = increament_number.toString()
-                //incrementtext.text = counterTAS.toString()
+
+               // incrementtext.text = counterTAS.toString()
+                preferencesTasbah.edit().clear()
             }
 
         }

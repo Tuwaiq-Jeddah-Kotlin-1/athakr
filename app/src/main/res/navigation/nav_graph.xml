@@ -6,12 +6,6 @@
     app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/favoriteFragment"
-        android:name="com.example.athakar.ui.main.fragment.FavoriteFragment"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
-
-    <fragment
         android:id="@+id/sabahFragment"
         android:name="com.example.athakar.ui.main.fragment.Sabah.ui.SabahFragment"
         android:label="fragment_sabah"

@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/purple_700</item>
         <item name="colorPrimaryDark">@color/teal_700</item>
 
     </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/home</item>
+        <item name="colorPrimary">@color/Tiffany</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="android:background">@drawable/no_btn</item>
+    </style>
+
+
 
 </resources>

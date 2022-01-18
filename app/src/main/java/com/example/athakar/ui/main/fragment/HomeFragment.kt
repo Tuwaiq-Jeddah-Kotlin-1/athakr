@@ -1,19 +1,15 @@
 package com.example.athakar.ui.main.fragment
 
-import android.content.Intent
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.os.bundleOf
-import androidx.fragment.app.viewModels
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.athakar.R
-import com.example.athakar.databinding.FragmentHomeBinding
+
 
 class HomeFragment : Fragment() {
 
@@ -28,10 +24,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        ///SKIP CODE
-
-        // val bind = FragmentHomeBinding.inflate(layoutInflater)
-        //  return bind.root
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
@@ -56,42 +48,10 @@ class HomeFragment : Fragment() {
           findNavController().navigate(R.id.action_homeFragment_to_qublahActivity) }
 
 
-       // nameofButton = view.findViewById(R.id.nameofButton)
-      //  nameofButton.setOnClickListener {
-           // findNavController().navigate(R.id.action_homeFragment_to_nameofFragment)
-       // }
-
-
-      //  quranButton = view.findViewById(R.id.quranButton)
-      //  quranButton.setOnClickListener {
-          //  findNavController().navigate(R.id.action_homeFragment_to_quranFragment)
         }
 
-
-
-
-
-         //   prayerTimeButton = view.findViewById(R.id.prayerTimeButton)
-         //   prayerTimeButton.setOnClickListener {
-          //      findNavController().navigate(R.id.action_homeFragment_to_prayerTimeFragment)
-         //   }
-
-
-
-           // nearmousqButton = view.findViewById(R.id.nearmousqButton)
-           // nearmousqButton.setOnClickListener {
-             //   findNavController().navigate(R.id.action_homeFragment_to_nearmousqFragment)
-         //   }
-
-
-          ///  OmrahButton = view.findViewById(R.id.OmrahButton)
-          //  OmrahButton.setOnClickListener {
-            //    findNavController().navigate(R.id.action_homeFragment_to_omrahFragment)
-          //  }
-
-      //  }
     }
-//}
+
 
 
 

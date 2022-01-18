@@ -86,42 +86,42 @@ class SettingFragment : Fragment() {
         }
     }
 
-        fun showLangDialog() {
-            val listLang = arrayOf("عربي", "English")
-            val mBuilder = AlertDialog.Builder(context)
-            mBuilder.setTitle("change languge")
-            mBuilder.setPositiveButton("ok") { _, _ ->
-                refreshCurrentFragment()
-            }
-            mBuilder.setSingleChoiceItems(listLang, -1) { dialog, which ->
-
-                if (which == 0) {
-                    setLocale("ar")
-                } else {
-                    setLocale("en")
-                }
-            }
-            val mDialog = mBuilder.create()
-            mDialog.show()
+    fun showLangDialog() {
+        val listLang = arrayOf("عربي", "English")
+        val mBuilder = AlertDialog.Builder(context)
+        mBuilder.setTitle("change languge")
+        mBuilder.setPositiveButton("ok") { _, _ ->
+            refreshCurrentFragment()
         }
+        mBuilder.setSingleChoiceItems(listLang, -1) { dialog, which ->
 
-        fun setLocale(lang: String){
-
-            val locale = Locale(lang)
-            Locale.setDefault(locale)
-            val config = Configuration()
-            config.locale = locale
-            requireContext().resources.updateConfiguration(config, requireContext().resources.displayMetrics)
-
-            val myPref = requireContext().getSharedPreferences("myPref", MODE_PRIVATE)
-            val editor = myPref.edit()
-
-            editor.putString("MyLang",lang)
-            //editor.commit()
-            editor.apply()
-            recreate(context as Activity)
-
+            if (which == 0) {
+                setLocale("ar")
+            } else {
+                setLocale("en")
+            }
         }
+        val mDialog = mBuilder.create()
+        mDialog.show()
+    }
+
+    fun setLocale(lang: String){
+
+        val locale = Locale(lang)
+        Locale.setDefault(locale)
+        val config = Configuration()
+        config.locale = locale
+        requireContext().resources.updateConfiguration(config, requireContext().resources.displayMetrics)
+
+        val myPref = requireContext().getSharedPreferences("myPref", MODE_PRIVATE)
+        val editor = myPref.edit()
+
+        editor.putString("MyLang",lang)
+        //editor.commit()
+        editor.apply()
+        recreate(context as Activity)
+
+    }
 
     private fun refreshCurrentFragment(){
         val id = findNavController().currentDestination?.id
@@ -130,8 +130,7 @@ class SettingFragment : Fragment() {
 
         Log.e("Access","$id")
     }
-        }
-
+}
 
 
 

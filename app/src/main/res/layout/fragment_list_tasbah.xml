@@ -7,29 +7,32 @@
     android:background="@drawable/background"
     tools:context=".ui.main.fragment.Sabah.ui.listTasbahFragment">
 
-
     <ImageView
-        android:id="@+id/bacK_counter_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_baseline_close_24"
+        android:id="@+id/display"
+        android:layout_width="55dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/sabah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <ImageView
         android:id="@+id/addTassbah"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="39dp"
+        android:layout_height="34dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
         android:src="@drawable/ic_baseline_create_24"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bacK_counter_page"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ImageContrastCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -45,7 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addTassbah"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.387"
         tools:listitem="@layout/list_item" />
 
 
