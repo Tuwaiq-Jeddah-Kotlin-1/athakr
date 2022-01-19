@@ -9,8 +9,8 @@
 
         <TextView
             android:id="@+id/title_tasbah"
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
+            android:layout_width="354dp"
+            android:layout_height="63dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/forty_bg"
             android:fontFamily="@font/fiqh_light"
@@ -26,23 +26,23 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.05"
-            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintHorizontal_bias="0.478"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="انواع الاذكار " />
 
         <ImageView
             android:id="@+id/iddelet"
-            android:layout_width="50dp"
-            android:layout_height="54dp"
+            android:layout_width="26dp"
+            android:layout_height="36dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintHorizontal_bias="0.117"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.737"
-            app:srcCompat="@drawable/ic_baseline_delete_24" />
+            app:layout_constraintVertical_bias="0.626"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

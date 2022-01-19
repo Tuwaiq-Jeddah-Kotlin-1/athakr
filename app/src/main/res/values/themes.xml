@@ -3,7 +3,6 @@
     <style name="Theme.Athakar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/Tiffany</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -14,12 +13,5 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Athakar.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
 
-    <style name="Theme.Athakar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.Athakar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

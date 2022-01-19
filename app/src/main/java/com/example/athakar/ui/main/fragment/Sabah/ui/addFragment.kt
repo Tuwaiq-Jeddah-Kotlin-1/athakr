@@ -30,16 +30,11 @@ class addFragment : Fragment() {
   var db= FirebaseFirestore.getInstance()
   val uid =FirebaseAuth.getInstance().currentUser?.uid
 
-    ////fire base
-//    private val sabah =Firebase.firestore.collection("users").document( "$uid")
-//        .collection("Tasbah").set()
 
 
     lateinit  var add:Button
     lateinit var addtv:EditText
-    private lateinit var delet:Button
-    private lateinit var updata:Button
-    private lateinit var retrave:Button
+    private lateinit var retrave:TextView
 
 
     val args : addFragmentArgs by navArgs()
@@ -56,31 +51,12 @@ class addFragment : Fragment() {
 
 
         add.setOnClickListener {
-          //  val action = addFragmentDirections.actionAddFragmentToListTasbahFragment(addtv.text.toString())
             val tesbah=Tasbah(name_Tasbha = addtv.text.toString())
            save(tesbah)
             findNavController().navigate(R.id.action_addFragment_to_listTasbahFragment)
-
         }
 
 
-        delet = view.findViewById(R.id.btndelet)
-
-        delet.setOnClickListener {
-            Toast.makeText(context, "delet button", Toast.LENGTH_SHORT).show()
-
-
-
-
-        }
-
-
-        updata = view.findViewById(R.id.btnupdata)
-        updata.setOnClickListener {
-
-            Toast.makeText(context, "updatra button", Toast.LENGTH_SHORT).show()
-
-        }
 
         retrave = view.findViewById(R.id.btnretrive)
 
@@ -105,13 +81,12 @@ class addFragment : Fragment() {
 
             }
 
-            Toast.makeText(context, "reteve button", Toast.LENGTH_SHORT).show()
 
         }
 
-
         return  view
     }
+
 
 
        /// add fun

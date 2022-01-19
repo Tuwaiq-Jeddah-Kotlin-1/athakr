@@ -5,10 +5,23 @@
       <map>
         <entry key="../../../../layout/custom_preview.xml" value="0.20572916666666666" />
         <entry key="app/src/main/res/drawable-v24/forty_bg.xml" value="0.20677083333333332" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable-v24/main_btn_bg.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable-v24/non_btn.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/drawable/buttombackground.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.16944444444444445" />
+        <entry key="app/src/main/res/drawable/ic_baseline_create_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.13703703703703704" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.13703703703703704" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable/like_border_24.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/drawable/no_btn.xml" value="0.21145833333333333" />
         <entry key="app/src/main/res/drawable/radius.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/activity_athkar.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/activity_details.xml" value="0.1953125" />
@@ -19,11 +32,12 @@
         <entry key="app/src/main/res/layout/activity_qubla.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_qublah.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.190625" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.22308513608958522" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.18425925925925926" />
         <entry key="app/src/main/res/layout/azkar_item.xml" value="0.190625" />
+        <entry key="app/src/main/res/layout/custombuttom.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_athakar.xml" value="0.18125" />
-        <entry key="app/src/main/res/layout/fragment_athaker.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/fragment_athaker.xml" value="0.12126984126984126" />
         <entry key="app/src/main/res/layout/fragment_athkar.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_calender.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_details.xml" value="0.18125" />
@@ -31,21 +45,21 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_kindtasbah.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/fragment_list_tasbah.xml" value="0.190625" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.18796296296296297" />
         <entry key="app/src/main/res/layout/fragment_nameof.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_nearmousq.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/fragment_omrah.xml" value="0.1765625" />
         <entry key="app/src/main/res/layout/fragment_prayer_time.xml" value="0.1953125" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.17291666666666666" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19142962849580492" />
         <entry key="app/src/main/res/layout/fragment_qibla.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/fragment_qibla2.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/fragment_quran.xml" value="0.18125" />
         <entry key="app/src/main/res/layout/fragment_sabah.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1953125" />
-        <entry key="app/src/main/res/layout/fragment_sigup.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_sigup.xml" value="0.18796296296296297" />
         <entry key="app/src/main/res/layout/item_category.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/item_details.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/list_item.xml" value="0.1425925925925926" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.264938705939227" />
         <entry key="app/src/main/res/layout/updata.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/menu/navigation_menu.xml" value="0.1" />
       </map>

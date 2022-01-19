@@ -3,23 +3,16 @@
 
     <item android:id="@+id/homeFragment"
           android:icon="@drawable/home"
-          android:title="الرئيسية" />
-
-    <item android:id="@+id/profileFragment"
-         android:icon="@drawable/fava"
-         android:title="ملف التعريف" />
+          android:title="@string/Home" />
 
 
     <item android:id="@+id/listTasbahFragment"
         android:icon="@drawable/sabah"
-        android:title="السبحة" />
+        android:title="@string/Sabha" />
 
 
     <item android:id="@+id/settingFragment"
         android:icon="@drawable/setting"
-        android:title="الاعدادات" />
-
-
-
+        android:title="@string/Setting" />
 
 </menu>

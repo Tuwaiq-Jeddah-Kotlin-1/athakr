@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Update Your Information"
+        android:text="@string/update_your_information"
         android:textSize="25sp" />
 
 
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:hint="user_name"
+        android:hint="@string/user_name"
         app:endIconMode="clear_text"
         app:helperText="*"
         app:helperTextTextColor="#FF0000"
@@ -55,5 +55,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        android:text="edit" />
+        android:text="@string/edit" />
 </LinearLayout>
