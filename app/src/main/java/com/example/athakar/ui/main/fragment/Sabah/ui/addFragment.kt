@@ -81,7 +81,6 @@ class addFragment : Fragment() {
 
             }
 
-            Toast.makeText(context, "reteve button", Toast.LENGTH_SHORT).show()
 
         }
 
