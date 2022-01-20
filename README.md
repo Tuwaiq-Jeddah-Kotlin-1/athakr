@@ -1,10 +1,10 @@
-# athakr
+# Athakr application (Noor)
 
-##Demo Account
+## Demo Account
 
 Email: afnan@gmail.com Password: 123456
 
-##Description
+## Description
 
 Simple Athkar application display all Muslim athkar, for android devecies using Kotlin Language.
 
