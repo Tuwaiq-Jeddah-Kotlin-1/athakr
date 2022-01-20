@@ -1,4 +1,4 @@
-# Athakr application (Noor)
+# Athakr Application (Noor)
 
 ## Demo Account
 
@@ -8,7 +8,7 @@ Email: afnan@gmail.com Password: 123456
 
 Simple Athkar application display all Muslim athkar, for android devecies using Kotlin Language.
 
-##Libraries Used
+## Libraries Used
 
 - Firebase for authentication and storing user data.
 - sensor for camposs.
