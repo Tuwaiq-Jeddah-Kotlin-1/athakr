@@ -13,6 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.app.ActivityCompat.recreate
 import androidx.navigation.fragment.findNavController
 import com.example.athakar.R
@@ -50,6 +51,7 @@ class SettingFragment : Fragment() {
         logout = view.findViewById(R.id.logout)
         logout.setOnClickListener {
             auth.signOut()
+            Toast.makeText(context,"log out successful" ,Toast.LENGTH_SHORT).show()
 
             val action = SettingFragmentDirections.actionSettingFragmentToLoginFragment()
             findNavController().navigate(action)
@@ -59,7 +61,10 @@ class SettingFragment : Fragment() {
 
         edit=view.findViewById(R.id.editNmae)
         edit.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+
             findNavController().navigate(R.id.action_settingFragment_to_profileFragment)
+
         }
 
 

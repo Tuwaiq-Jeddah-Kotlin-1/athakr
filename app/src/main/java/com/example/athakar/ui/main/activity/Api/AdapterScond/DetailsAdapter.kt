@@ -76,7 +76,7 @@ class DetailsAdapter (val detailsList: List<responceAkthar>): RecyclerView.Adapt
         }
 
 
-        //---------deleteFavorite------------------------------------------------------------------------------------------
+        //---------deleteFavorite------------------------
         fun deletezaker(zakerid: String, usersid: String) {
             firestore.collection("users").document(usersid)
                 .collection("like").document(zakerid.toString()).delete()
