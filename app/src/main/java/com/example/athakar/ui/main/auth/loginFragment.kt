@@ -23,6 +23,7 @@ class loginFragment : Fragment() {
     private lateinit var pass: EditText
     private lateinit var signIn: Button
     private lateinit var createAccount: TextView
+    private lateinit var forget: TextView
     private lateinit var skip: TextView
 
 
@@ -43,6 +44,14 @@ class loginFragment : Fragment() {
         signIn = view.findViewById(R.id.loginrButton)
         createAccount = view.findViewById(R.id.CreateAccount)
         skip = view.findViewById(R.id.Skip)
+        forget= view.findViewById(R.id.forgetpassword)
+
+
+        forget.setOnClickListener {
+            val action = loginFragmentDirections.actionLoginFragmentToForgetpasswordFragment()
+            findNavController().navigate(action)
+
+        }
 
 
         skip.setOnClickListener {
