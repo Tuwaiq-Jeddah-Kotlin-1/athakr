@@ -66,5 +66,8 @@
     <string name="Home">الرئيسية</string>
     <string name="Sabha">السبحة</string>
     <string name="Setting">الاعدادات</string>
+    <string name="forgetpassword">هل نسيت كلمة السر!</string>
+    <string name="please_enter_your_email" />
+    <string name="email_sent" />
 
 </resources>

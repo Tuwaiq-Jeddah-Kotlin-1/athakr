@@ -97,6 +97,9 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetpasswordFragment"
+            app:destination="@id/forgetpasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/sigupFragment"
@@ -136,5 +139,14 @@
         android:name="com.example.athakar.ui.main.profileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/forgetpasswordFragment"
+        android:name="com.example.athakar.ForgetpasswordFragment"
+        android:label="fragment_forgetpassword"
+        tools:layout="@layout/fragment_forgetpassword" >
+        <action
+            android:id="@+id/action_forgetpasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 
 </navigation>
