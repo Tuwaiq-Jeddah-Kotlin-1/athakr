@@ -10,9 +10,7 @@
         android:icon="@drawable/sabah"
         android:title="@string/Sabha" />
 
-
     <item android:id="@+id/settingFragment"
         android:icon="@drawable/setting"
         android:title="@string/Setting" />
-
 </menu>

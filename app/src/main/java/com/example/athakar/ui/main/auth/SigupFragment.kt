@@ -17,7 +17,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class SigupFragment : Fragment() {
 
-    private lateinit var skip: TextView
+
     private lateinit var email: EditText
     private lateinit var pass: EditText
     private lateinit var confirm: EditText
@@ -48,15 +48,15 @@ class SigupFragment : Fragment() {
         username = view.findViewById(R.id.edProfile)
         signUp = view.findViewById(R.id.RegisterButton)
         backToSignIn = view.findViewById(R.id.tvloginlink)
-        skip = view.findViewById(R.id.Skip)
+       // skip = view.findViewById(R.id.Skip)
 
         firebaseFirestore  = FirebaseFirestore.getInstance()
         auth=FirebaseAuth.getInstance()
 
-        skip.setOnClickListener {
-            val action = SigupFragmentDirections.actionRegistrationActivityToHomeFragment()
-            findNavController().navigate(action)
-        }
+        //skip.setOnClickListener {
+           // val action = SigupFragmentDirections.actionRegistrationActivityToHomeFragment()
+          //  findNavController().navigate(action)
+       // }
 
         backToSignIn.setOnClickListener {
             val action = SigupFragmentDirections.actionSigupFragmentToLoginFragment()

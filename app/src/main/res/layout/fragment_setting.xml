@@ -44,6 +44,7 @@
         tools:layout_editor_absoluteX="0dp">
 
       <ImageView
+          android:id="@+id/imgpro"
           android:layout_width="40dp"
           android:layout_height="40dp"
           android:layout_gravity="center"
@@ -137,6 +138,7 @@
         app:layout_constraintTop_toBottomOf="@+id/shareapp">
 
       <ImageView
+          android:id="@+id/logoutimag"
           android:layout_width="40dp"
           android:layout_height="40dp"
           android:layout_gravity="center"

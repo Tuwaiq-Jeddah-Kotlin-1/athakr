@@ -16,36 +16,51 @@ import java.util.*
 
 class CalenderFragment : Fragment(), OnDateSelectedListener {
 
-        private lateinit var binding: FragmentCalenderBinding
-        override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
-        ): View? {
-            binding = FragmentCalenderBinding.inflate(inflater, container, false)
-            return binding.root
+    private lateinit var hijri_date_tv: TextView
+    private lateinit var calendarView: MaterialHijriCalendarView
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_calender, container, false)
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        hijri_date_tv = view.findViewById(R.id.hijri_date_tv)
+        hijri_date_tv.setOnClickListener {
+            getSelectedDatesString()
         }
 
-        override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
-            binding.calendarView.selectedDate = CalendarDay.today()
-            binding.hijriDateTv.text = getSelectedDatesString()
-            binding.calendarView.setOnDateChangedListener(this)
 
+
+        calendarView = view.findViewById(R.id.calendarView)
+        calendarView.setOnClickListener {
+            calendarView.selectedDate = CalendarDay.today()
+            calendarView.setOnDateChangedListener(this)
         }
 
-        override fun onDateSelected(
-            widget: MaterialHijriCalendarView,
-            date: CalendarDay,
-            selected: Boolean
-        ) {
-            binding.hijriDateTv.text = getSelectedDatesString()
-        }
+    }
 
-        private fun getSelectedDatesString(): String? {
-            val date: CalendarDay = binding.calendarView.selectedDate
+    override fun onDateSelected(
+        widget: MaterialHijriCalendarView,
+        date: CalendarDay,
+        selected: Boolean
+    ) {
+        hijri_date_tv.text = getSelectedDatesString()
+    }
 
-            return NumberHelper.getArabicNumber(date.calendar[Calendar.DAY_OF_MONTH]) + " " +
-                    date.calendar.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale("ar")) +
-                    " " + NumberHelper.getArabicNumber(date.year) + " هــ"
-        }
+
+    private fun getSelectedDatesString(): String? {
+        val date: CalendarDay = calendarView.selectedDate
+
+        return NumberHelper.getArabicNumber(date.calendar[Calendar.DAY_OF_MONTH]) + " " +
+                date.calendar.getDisplayName(Calendar.MONTH, Calendar.SHORT, Locale("ar")) +
+                " " + NumberHelper.getArabicNumber(date.year) + " هــ"
+    }
 }

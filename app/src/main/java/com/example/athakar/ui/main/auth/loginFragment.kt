@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.example.athakar.R
 import com.google.firebase.auth.FirebaseAuth
 import androidx.navigation.fragment.findNavController
@@ -43,8 +40,18 @@ class loginFragment : Fragment() {
         pass = view.findViewById(R.id.edPassWordLogin)
         signIn = view.findViewById(R.id.loginrButton)
         createAccount = view.findViewById(R.id.CreateAccount)
-        skip = view.findViewById(R.id.Skip)
+        skip= view.findViewById(R.id.skip)
         forget= view.findViewById(R.id.forgetpassword)
+
+
+
+        skip.setOnClickListener {
+            val action = loginFragmentDirections.actionLoginFragmentToHomeFragment()
+            findNavController().navigate(action)
+
+        }
+
+
 
 
         forget.setOnClickListener {
@@ -53,11 +60,6 @@ class loginFragment : Fragment() {
 
         }
 
-
-        skip.setOnClickListener {
-            val action = loginFragmentDirections.actionRegistrationActivityToHomeFragment()
-            findNavController().navigate(action)
-        }
 
 
        val currentUser = auth.currentUser

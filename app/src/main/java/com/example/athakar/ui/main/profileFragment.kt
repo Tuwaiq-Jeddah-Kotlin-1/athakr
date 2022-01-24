@@ -1,5 +1,6 @@
 package com.example.athakar.ui.main
 
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
@@ -23,6 +24,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.math.log
 
 
 class profileFragment : Fragment() {
@@ -32,7 +34,7 @@ class profileFragment : Fragment() {
     private lateinit var done: Button
 
     val db = FirebaseFirestore.getInstance()
-
+    var usersId = FirebaseAuth.getInstance().currentUser?.uid
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,6 +53,8 @@ class profileFragment : Fragment() {
         usernameTV=view.findViewById(R.id.textView4)
         userEmailtv=view.findViewById(R.id.textViewname)
 
+       // Toast.makeText(context, "hello${usersId}", Toast.LENGTH_SHORT).show()
+
 
         done.setOnClickListener {
 
@@ -60,6 +64,7 @@ class profileFragment : Fragment() {
         }
 
         getUserInfo()
+
     }
 
 
@@ -83,7 +88,11 @@ class profileFragment : Fragment() {
                 builder.dismiss()
             usernameTV.setText(username.text.toString())
 
-            Toast.makeText(context, "hello ${username.text.toString()}", Toast.LENGTH_SHORT).show()
+           // Log.e(TAG, "lllllllllllllllllllllllll", )
+
+
+            ///Toast.makeText(context, "hello ${username.text.toString()}", Toast.LENGTH_SHORT).show()
+
 
         }
         builder.setContentView(view)
@@ -94,9 +103,11 @@ class profileFragment : Fragment() {
     fun getUserInfo() {
 
         var usersId = FirebaseAuth.getInstance().currentUser?.uid
+        //Toast.makeText(context, "id ${usersId.toString()} ", Toast.LENGTH_SHORT).show()
+
 
         try {
-            //coroutine
+
 
             db.collection("users").document("${usersId.toString()}")
                 .get().addOnCompleteListener {
@@ -106,12 +117,14 @@ class profileFragment : Fragment() {
                         var name = it.result!!.getString("user_name")
                         var userEmail = it.result!!.getString("user_email")
 
+                       // Toast.makeText(context, "hello ${name}", Toast.LENGTH_SHORT).show()
 
                         usernameTV.setText(name)
                         userEmailtv.setText(userEmail)
-                        Toast.makeText(context, "name ${name}", Toast.LENGTH_SHORT).show()
+                        //Toast.makeText(context, "name ${name}", Toast.LENGTH_SHORT).show()
                     } else {
-                        Log.e("error \n", "errooooooorr")
+
+                      //  Toast.makeText(context, "hi ", Toast.LENGTH_SHORT).show()
                     }
                 }
         } catch (e: Exception) {

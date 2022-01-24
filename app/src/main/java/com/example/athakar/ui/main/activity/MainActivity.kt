@@ -3,6 +3,7 @@ package com.example.athakar.ui.main.activity
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.navigation.findNavController
@@ -11,6 +12,7 @@ import androidx.work.*
 import com.example.athakar.R
 import com.example.athakar.ui.main.myworker.Myworker
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -39,6 +41,15 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView=findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
         bottomNavigationView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination , _ ->
+            when (destination.id) {
+                R.id.loginFragment -> bottomNavigationView.visibility = View.GONE
+                R.id.sigupFragment -> bottomNavigationView.visibility = View.GONE
+                else -> bottomNavigationView.visibility = View.VISIBLE
+            }
+
+        }
 
 myWorkerManger()
 
