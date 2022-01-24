@@ -35,8 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:counterMaxLength="15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSignUpEmailLayout"
-        app:startIconDrawable="@drawable/ic_baseline_close_24">
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpEmailLayout">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextUserName"

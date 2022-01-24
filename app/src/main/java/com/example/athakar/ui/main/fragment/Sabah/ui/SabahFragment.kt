@@ -58,33 +58,39 @@ class SabahFragment : Fragment() {
 
         // counter code
 
+        preferencesTasbah.getInt("counter", 0)
 
-        var increament_number = preferencesTasbah.getInt("counter", 0)
-        val counterTAS = preferencesTasbah.getInt("counter", 0)
+        var increament_number = 0
+
+       // val counterTAS = preferencesTasbah.getInt("counter", 0)
+
         incrementtext = view.findViewById(R.id.incrementtext)
+
         incrementtext.text=preferencesTasbah.getInt("counter", 0).toString()
+
         incrementtext.setOnClickListener {
 
-            increament_number ++
+            increament_number++
             preferencesTasbah.edit().putInt("counter", increament_number).apply()
-            //val counterTAS = preferencesTasbah.getInt("counter",100)
+           // val counterTAS = preferencesTasbah.getInt("counter",100)
 
             incrementtext.text = increament_number.toString()
-            //incrementtext.text = counterTAS.toString()
+           // incrementtext.text = counterTAS.toString()
 
-
-
+        }
             // rest buttom code
 
             restButton = view.findViewById(R.id.reset)
             restButton.setOnClickListener {
-                increament_number = 0
-                incrementtext.text = increament_number.toString()
 
-               // incrementtext.text = counterTAS.toString()
-                preferencesTasbah.edit().clear()
+                 increament_number = 0
+                 incrementtext.text = increament_number.toString()
+
+                 // incrementtext.text = counterTAS.toString()
+                 preferencesTasbah.edit().clear().apply()
+
             }
 
-        }
+
     }
 }

@@ -25,6 +25,7 @@ class QublahActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
         binding = ActivityQublahBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
